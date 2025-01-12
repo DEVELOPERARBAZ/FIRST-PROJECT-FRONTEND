@@ -1,0 +1,243 @@
+#homepage {
+  width: 100vw;
+}
+
+#homepage video{
+  width: 100vw;
+}
+
+.about {
+  width: 100vmax;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+#left {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  text-transform: capitalize;
+}
+
+#left p {
+  font-size: 3vh;
+  text-transform: capitalize;
+  display: flex;
+}
+
+#lady {
+  width: 30vw;
+  height: 80vh;
+}
+
+#left ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+
+  li {
+    font-size: 3vh;
+  }
+}
+
+#left h4 {
+  width: 50vw;
+}
+
+#wishes {
+  color: gray;
+}
+#wishes span{
+  color:rgba(0, 0, 0, 0.849);
+}
+
+#learn {
+  background-color: #c2ac90;
+  color: #030502;
+  border: 0;
+  width: 10vw;
+  border-radius: 1vh;
+  margin-top: 1vh;
+}
+
+.project {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project h2 {
+  height: 10vh;
+  width: 50vw;
+  font-size: 5vh;
+}
+
+.services {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  gap: 2vh;
+}
+
+.services h2 {
+  height: 10%;
+  width: 100vw;
+  font-size: 5vh;
+}
+#content {
+  width: 20vw;
+  height: 90%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  box-shadow: 1px 1px 2px 2px gray;
+  margin-bottom: 2vh;
+}
+#content img {
+  width: 20vw;
+}
+
+#content h4 {
+  color: #3c3c3c;
+  height: 20%;
+  text-align: center;
+}
+
+#content h5 {
+  color: #5d5d5d;
+  height: 10%;
+  text-align: center;
+}
+
+#content button {
+  height: 20%;
+  border: 0;
+  background-color: #323232;
+  color: white;
+  width: 40%;
+  padding: 1vh;
+  margin-bottom: 1vh;
+}
+@media (max-width: 600px) {
+  
+  #homepage{
+    width: 100vw;
+  }
+  #homepage video{
+    width: 100vw;
+    /* transform: translateX(-25%); */
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    gap: 5vh;
+  }
+
+  /* This is top in mobile*/
+  #left {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #left h2 {
+    background-color: transparent;
+    height: 10vh;
+    width: 100vw;
+    font-size: 3vw;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0;
+  }
+
+  #left ol {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+  }
+
+  ol li {
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    font-size: smaller;
+    color: white;
+  }
+
+  #learn {
+    width: 100%;
+  }
+
+  #left h4 {
+    overflow: hidden;
+    background-color: transparent;
+    height: 15vh;
+    width: 80vw;
+    font-size: 1.9vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 2px 1px gray;
+  }
+  #wishes {
+    color: gray;
+    font-size: 3vh;
+  }
+  #wishes span{
+    color:rgba(0, 0, 0, 0.849);
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+  }
+  #lady {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .project {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project h2 {
+    width: 100vw;
+    margin-top: 5vw;
+    font-size: 3vh;
+  }
+  .services h2 {
+    margin-top: 5vw;
+    font-size: 3vh;
+  }
+  .services #content {
+    width: 60vw;
+  }
+  #content img {
+    width: 100%;
+  }
+  #content h4,
+  h5 {
+    font-size: 2vh;
+  }
+  #content button {
+    width: 50%;
+  }
+}

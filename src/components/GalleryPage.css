@@ -1,0 +1,10 @@
+
+.insta-reel{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 2vh;
+}

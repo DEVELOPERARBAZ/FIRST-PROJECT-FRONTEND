@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#header-section{
+    background:linear-gradient(to right,#c2ac90,white,#c2ac90);
+    width: 100vw;
+    height: 15vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+#menuIcon{
+    display: none;
+}
+
+#mainLogo{
+    margin-top: 1%;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 50%;
+    box-shadow: 2px 1px 3px 3px black;
+}
+  
+@media (max-width:600px){
+    #header-section{
+        background:linear-gradient(to left  ,white,#c2ac90);
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        gap:2vw;
+    }
+    #header-section #mainLogo{
+        width: 85vw;
+        height: 15vh;
+        border-radius: 50%;
+        box-shadow: 2px 1px 3px 3px black;
+        margin-top: 2vh;
+    }
+    #menuIcon{
+        all:unset;
+        width: 13vw;
+        height: 10vh;
+        margin-top: 4vh;
+    }
+}
