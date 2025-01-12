@@ -34,7 +34,7 @@ import './slider.css';
     useEffect(() => {
       const interval = setInterval(nextSlide, 3000); // 3000ms = 3 seconds
       return () => clearInterval(interval); // Cleanup the interval when component unmounts
-    }, []);
+    });
 
   return (
     <div className="slider-container">
