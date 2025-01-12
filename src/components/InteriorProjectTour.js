@@ -50,7 +50,7 @@ export default function InteriorProjectTour() {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [currentImage, setCurrentImage] = useState(null);
 
-    const image = [h1, h2, h3, h4];
+
     const openPopup = (image) => {
         setCurrentImage(image);
         setIsPopupOpen(true);

@@ -11,7 +11,7 @@ import Er from './components/ErrorPage';
 import './App.css';
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {

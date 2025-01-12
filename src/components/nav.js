@@ -1,8 +1,6 @@
 import { Home, About, SpecialPackages, Gallery, InteriorProjectTour, InteriorBlog, Contact } from './navElements';
 import { BrowserRouter as Router, Routes, Route, NavLink, Scri, NavLinkpts } from 'react-router-dom';
 import './nav.css';
-import ScrollToTop from "./ScrollToTop";
-
 function nav() {
     return (
         <nav className="foreground">
