@@ -30,7 +30,7 @@ class ErrorBoundary extends React.Component {
   render() {
     if (this.state.hasError) {
       return <Er />; // Render error page if an error occurs
-    }
+    }d
     return this.props.children;
   }
 }
