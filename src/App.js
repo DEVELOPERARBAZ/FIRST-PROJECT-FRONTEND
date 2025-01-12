@@ -51,7 +51,7 @@ function App() {
             <Route path="/Gallery" element={<Gallery />} />
             <Route path="/InteriorProjectTour" element={<InteriorProjectTour />} />
             <Route path="/Contact" element={<ContactPage />} />
-            <Route path="/*" element={<Er />} /> {/* Catch-all route */}
+            <Route path="*" element={<Er />} />
           </Routes>
         </Router>
         <Footer />
