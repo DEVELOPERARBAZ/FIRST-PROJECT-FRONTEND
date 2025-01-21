@@ -1,5 +1,5 @@
 import { Home, About, SpecialPackages, Gallery, InteriorProjectTour, Contact } from './navElements';
-import { BrowserRouter as Router, Routes, Route, NavLink, Scri, NavLinkpts } from 'react-router-dom';
+import { BrowserRouter as NavLink } from 'react-router-dom';
 import './nav.css';
 function nav() {
     return (

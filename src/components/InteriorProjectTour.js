@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react';
+import {useState} from 'react';
 import './InteriorProjectPage.css';
 import h1 from '../images/h1.jpg';
 import h2 from '../images/h2.jpg';
