@@ -91,7 +91,7 @@ export default function InteriorProjectTour() {
             {isPopupOpen && (
                 <div className="popup">
                     <div className="popup-content">
-                        <img src={currentImage} alt="Popup Image" />
+                        <img src={currentImage} alt="sunset" />
                         <button className="close-btn" onClick={closePopup}>Cancel</button>
                     </div>
                 </div>
