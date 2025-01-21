@@ -1,5 +1,5 @@
 
-import mainLogo from '../images/originalCompanyLogo.jpg';
+import mainLogo from '../images/EditedMainLogo.png';
 import './header.css';
 function comp() {
     return (

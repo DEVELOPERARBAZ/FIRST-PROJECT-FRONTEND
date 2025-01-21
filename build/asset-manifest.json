@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc44b1f4.css",
-    "main.js": "/static/js/main.c11c70f8.js",
+    "main.css": "/static/css/main.d4724eb8.css",
+    "main.js": "/static/js/main.86c58235.js",
     "static/media/backGroundVideo.mp4": "/static/media/backGroundVideo.329c15f9e9a454341600.mp4",
     "static/media/pu.png": "/static/media/pu.f9568f11ba435a477649.png",
+    "static/media/EditedMainLogo.png": "/static/media/EditedMainLogo.ef5ce5ee0c6fa251d8e2.png",
     "static/media/carpentry.png": "/static/media/carpentry.363a2620da004e015880.png",
     "static/media/pureal.png": "/static/media/pureal.db3f5529e926858bd57b.png",
     "static/media/h2.jpg": "/static/media/h2.cb22dcb9ba1ccb209575.jpg",
@@ -40,14 +41,13 @@
     "static/media/sundar.jpg": "/static/media/sundar.57dfb0c4096e19ecc791.jpg",
     "static/media/c8.jpg": "/static/media/c8.014a8cdd2e8d424af964.jpg",
     "static/media/c7.jpg": "/static/media/c7.6080a7052d44b4de0b88.jpg",
-    "static/media/originalCompanyLogo.jpg": "/static/media/originalCompanyLogo.b5fab9f0fbfd67b02c70.jpg",
     "static/media/c4.jpg": "/static/media/c4.1b106df53aebb23bed2d.jpg",
     "index.html": "/index.html",
-    "main.dc44b1f4.css.map": "/static/css/main.dc44b1f4.css.map",
-    "main.c11c70f8.js.map": "/static/js/main.c11c70f8.js.map"
+    "main.d4724eb8.css.map": "/static/css/main.d4724eb8.css.map",
+    "main.86c58235.js.map": "/static/js/main.86c58235.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc44b1f4.css",
-    "static/js/main.c11c70f8.js"
+    "static/css/main.d4724eb8.css",
+    "static/js/main.86c58235.js"
   ]
 }

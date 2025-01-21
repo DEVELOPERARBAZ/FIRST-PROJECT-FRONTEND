@@ -40,9 +40,10 @@ body {
     height: 100%;
 }
 /* Section Title */
-.section-title {
+.section .section-title {
     text-align: center;
-    font-size: 1.8rem;
+    height: 10%;
+    font-size: 2rem;
     margin: 40px 0 20px;
     position: relative;
     color: #333;
@@ -51,6 +52,9 @@ body {
     letter-spacing: 1px;
     font-family: sans-serif;
     animation: symmetricTranslate 16s ease-in-out infinite;
+}
+.section .container{
+    height: 90%;
 }
 @keyframes symmetricTranslate {
     0%{
@@ -117,7 +121,7 @@ body {
 }
 
 .images:hover {
-    transform: scale(1.1);
+    transform: scale(1.11);
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.799);
 }
 
@@ -193,6 +197,10 @@ body {
         gap:0;
     }
 
+    .section .section-title{
+        width: 100vw;
+        font-size: 4vh;
+    }
     .section h2{
         font-size: 3vh;
     }

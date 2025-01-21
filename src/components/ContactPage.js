@@ -49,7 +49,7 @@ function ContactPage() {
             // Hide the popup after 3 seconds
             setTimeout(() => {
               setSuccessPopup(false);
-            }, 3000);
+            }, 2000);
           } else {
             setStatus('Failed to send email. Please try again.');
           }
@@ -70,21 +70,21 @@ function ContactPage() {
                         <p>Contact Me
                             <a href="tel:+918108323120">+91 8108323120</a>
                             <a href="mailto:careemgroup97@gmail.com?subject=Inquiry&body=Hello, I have a question about...">careemgroup97@gmail.com</a>
-                            <span>address : room no.07 akhtari begum compex cementry road qureshi nagar kurla east mumbai 400070.</span>
+                            <span>address : room no.07 akhtari begum complex cementry road qureshi nagar kurla east mumbai 400070.</span>
                         </p>
                     </div>
 
                     <div id="bottom">
                         <form onSubmit={handleSubmit}>
-                            <label htmlFor="username">Name</label><input type="text" placeholder="Enter Your Name" id="username" name="name" value={formData.name} onChange={handleChange} required />
+                <label htmlFor="username">Name</label><input type="text" placeholder="Enter Your Name" maxLength={50} id="username" name="name" value={formData.name} onChange={handleChange} required />
 
-                            <label htmlFor="usermail">Email</label><input type="email" placeholder="Enter Your Email" id="usermail" name="email" value={formData.email} onChange={handleChange} required  />
+                            <label htmlFor="usermail">Email</label><input type="email" placeholder="ENTER YOUR EMAIL" id="usermail" name="email" value={formData.email} onChange={handleChange} required  />
 
-                            <label htmlFor="usernumber">Number</label><input type="tel" placeholder="Enter Your Number" id="usernumber" name="number" value={formData.number} onChange={handleChange} required />
+                            <label htmlFor="usernumber">Number</label><input type="tel" placeholder="Enter Your Number" maxLength={12} id="usernumber" name="number" value={formData.number} onChange={handleChange} required />
 
-                            <label htmlFor="location">Location</label><input type="text" placeholder="Your Location" id="location" name="location" value={formData.location} onChange={handleChange} required  />
+                            <label htmlFor="location">Location</label><input type="text" placeholder="Your Location" maxLength={100} id="location" name="location" value={formData.location} onChange={handleChange} required  />
 
-                            <textarea id="description" type="text" name="message" placeholder="Enter Your message here .." minLength={0} maxLength={200} value={formData.message} onChange={handleChange} required  />
+                            <textarea id="description" type="text" name="message" placeholder="Enter Your message here .." minLength={1} maxLength={200} value={formData.message} onChange={handleChange} required  />
                             <button type="submit" onSubmit={handleSubmit} value="Send Enquiry">SUBMIT</button>
                         </form>
 

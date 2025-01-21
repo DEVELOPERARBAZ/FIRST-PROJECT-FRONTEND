@@ -9,7 +9,7 @@ export default function HomePage() {
     const navigate = useNavigate();
 
     const toAbout = () => {
-        navigate("/about");
+        navigate("/InteriorProjectTour");
     };
 
     const toContact = () => {
@@ -28,10 +28,10 @@ export default function HomePage() {
             <hr></hr>
             <section className="about">
                 <div id="left">
-                    <h2>
+                    <h1>
                         we provide ourselves as a company provide unmatchable services to
                         our client with.
-                    </h2>
+                    </h1>
                     <ol type="1">
                         <li>interior painting</li>
                         <li>exterior painting</li>

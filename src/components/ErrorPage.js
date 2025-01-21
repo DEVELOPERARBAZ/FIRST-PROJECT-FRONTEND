@@ -9,7 +9,7 @@ const Er = () => {
       <p className="er-message">
         The page you're looking for doesn't exist or an error occurred.
       </p>
-      <Link to="/" className="er-link">
+      <Link to="https://careemgroup.netlify.app/" className="er-link">
         Go Back to Home
       </Link>
     </div>

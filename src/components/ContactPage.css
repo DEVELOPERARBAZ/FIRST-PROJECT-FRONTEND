@@ -87,6 +87,7 @@ input{
     text-align:center;
     border-radius: 3vh;
     border:0;
+    text-transform: uppercase;
 }
 label{
     font-size: 3vh;
@@ -144,16 +145,23 @@ form button{
         flex-direction: column;
         width: 100vw;;
         height: 100vh;
-        margin-bottom: 5vh;
     }
     #top span{
         width: 100vw;
-        font-size: 1.5vh;
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    #top p{
+        font-weight: 400;
+    }
+    #top p a{
+        font-weight: 800;
     }
     #bottom{
         /* background-color: tan; */
         width: 100vw;
         height: 200vh;
+        gap: 1vh;
     }
     #bottom form{
         width: 100vw;
@@ -164,24 +172,31 @@ form button{
         align-items: center;
         /* background-color: red; */
     }
-    form input,#description{
+    form input{
         color:white;
         font-size: 1.4vh;
         width: 60vw;
         height: 3vh;
         /* letter-spacing: 0.8vw; */
-        color:black;
         font-weight: 800;
+        text-transform: uppercase;
     }
     label{
         font-size: 1.5vh;
         overflow: hidden;
         font-weight: 700;
     }
-    #description{
+    form #description{
         color:black;
-        font-size: 1vh;
+        font-size: 3vw;
+        width: 60vw;
+        height: 10vh;
         font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        text-transform:capitalize;
     }
     form button{
         width: 20vw;
@@ -192,6 +207,10 @@ form button{
         align-items: center;
         margin-bottom: 1vh;
         overflow: hidden;
+    }
+    input[type="email"]{
+        text-transform:capitalize;
+        resize: none;          
     }
 }
 
