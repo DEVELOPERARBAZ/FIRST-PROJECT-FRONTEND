@@ -45,7 +45,7 @@ export default function HomePage() {
                     <h4>we have the expertise and experience to prepare any surface and then apply your choice of paint, high-performance coating, waterproofing, fireproofing, varnish, shellac, wall covering, and specialty finishes</h4>
                     <h2 id="wishes">WE’LL   PAINT  YOUR <span>DREAMS</span> INTO <span>REALITY</span></h2>
                 </div>
-                <img id="lady" src={lady}></img>
+                <img id="lady" src={lady} alt="lady"></img>
             </section>
             <hr></hr>
             <div className="project">

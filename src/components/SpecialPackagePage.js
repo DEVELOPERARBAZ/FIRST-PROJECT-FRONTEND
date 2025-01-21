@@ -24,31 +24,31 @@ function SpecialPackagePage() {
             <div id="special-content">
 
                 <div className="card">
-                    <img src={pu}></img>
+                    <img src={pu} alt="img1"></img>
                     <h3>PU Application Package</h3>
                     <button onClick={() => openWhatsAppChat(phoneNumber,message)} target="_blank">Know More..</button>
                 </div>
 
                 <div className="card">
-                    <img src={painting}></img>
+                    <img src={painting} alt="img1"></img>
                     <h3>Interior Painting Package</h3>
                     <button onClick={() => openWhatsAppChat(phoneNumber,message)} target="_blank">Know More..</button>
                 </div>
 
                 <div className="card">
-                    <img src={wash}></img>
+                    <img src={wash} alt="img1"></img>
                     <h3>Interior Bathroom Package</h3>
                     <button onClick={() => openWhatsAppChat(phoneNumber,message)} target="_blank">Know More..</button>
                 </div>
 
                 <div className="card">
-                    <img src={c1}></img>
+                    <img src={c1} alt="img1"></img>
                     <h3>Ceiling Falls Package</h3>
                     <button onClick={() => openWhatsAppChat(phoneNumber,message)} target="_blank">Know More..</button>
                 </div>
 
                 <div className="card">
-                    <img src={carpentry}></img>
+                    <img src={carpentry} alt="img1"></img>
                     <h3>Carpentry Work Package</h3>
                     <button onClick={() => openWhatsAppChat(phoneNumber,message)} target="_blank">Know More..</button>
                 </div>
