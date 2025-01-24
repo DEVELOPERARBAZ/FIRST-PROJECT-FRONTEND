@@ -3,7 +3,7 @@
 }
 
 #homepage video{
-  width: 100vw;
+  width: 120vw;
 }
 
 .about {
@@ -80,9 +80,9 @@
 }
 
 .project h2 {
-  height: 10vh;
+  height: auto;
   width: 50vw;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 
 .services {
@@ -96,9 +96,9 @@
 }
 
 .services h2 {
-  height: 10%;
+  height: auto;
   width: 100vw;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 #content {
   width: 20vw;
@@ -137,14 +137,63 @@
   padding: 1vh;
   margin-bottom: 1vh;
 }
+
 @media (max-width: 600px) {
-  
+
+  @keyframes title-blink {
+    0%,100%{
+      color:transparent;
+    }50%{
+      color:#cba16a;
+      text-shadow: 0 0 10px #cba16a, 0 0 20px #cba16a, 0 0 30px #cba16a;
+    }
+  }
+
+  #left ol li:nth-child(1) {
+    animation-delay: 0s;
+  }
+  #left ol li:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  #left ol li:nth-child(3) {
+    animation-delay: 1s;
+  }
+  #left ol li:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  #left ol li:nth-child(5) {
+    animation-delay: 2s;
+  }
+
+  ol li {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    font-size: smaller;
+    color: #cba16a ;
+    animation: title-blink 5s ease infinite;
+    border-top-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+  }
+
   #homepage{
     width: 100vw;
   }
+  #video-heading{
+    position: absolute;
+    z-index: 5;
+    width: 80vw;
+    text-align: center;
+    transform: translate(5vh,20vh);
+    color : black;
+    background-color: white;
+    font-size: 3vh;
+  }
   #homepage video{
-    width: 100vw;
-    /* transform: translateX(-25%); */
+    position:relative;
+    z-index: -1;
+    width: 250vw;
+    transform: translateX(-25%);
   }
   .about {
     display: flex;
@@ -166,6 +215,7 @@
     background-color: transparent;
     height: 10vh;
     width: 98vw;
+    font-weight: 600;
     font-size: 4vw;
     display: flex;
     justify-content: center;
@@ -179,80 +229,111 @@
     justify-content: center;
     gap: 1vh;
   }
-
-  ol li {
-    width: 100%;
-    background-color: gray;
-    text-align: center;
-    font-size: smaller;
-    color: white;
-  }
-
   #learn {
     width: 100%;
+    height: 4vh;
+    background-color: #cba16a;
+    text-align: center;
+    font-size: smaller;
+    color: black;
   }
 
   #left h4 {
     overflow: hidden;
     background-color: transparent;
-    height: 15vh;
+    height: auto;
+    padding: 1vh;
     width: 80vw;
     font-size: 1.9vh;
     display: flex;
     align-items: center;
-    box-shadow: 1px 1px 2px 1px gray;
+    box-shadow: 1px 1px 10px 1px #cba16a;
+
   }
   #wishes {
-    color: gray;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 2vh;
   }
   #wishes span{
-    color:rgba(0, 0, 0, 0.849);
+    color: black;
     margin-left: 0.5vh;
     margin-right: 0.5vh;
+    text-shadow: 0 0 10px #cba16a, 0 0 20px #cba16a, 0 0 30px #cba16a;
+    animation: title-blink 5s ease infinite;
   }
   #lady {
     width: 90vw;
     height: 50vh;
   }
-
   .project {
+    /* background-color: red; */
     width: 100vw;
     display: flex;
     flex-direction: column;
   }
 
   .project h2 {
-    width: 100vw;
-    margin-top: 5vw;
-    font-size: 3vh;
+    width: 80vw;
+    margin-top: 1vh;
+    font-size: 4vh;
+    font-weight: 400;
+    color:  #cba16a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw; */
+    margin-bottom: 0.5vh;
+    /* animation: title-blink 5s ease infinite; */
   }
+
+
   .services h2 {
-    margin-top: 5vw;
-    font-size: 3vh;
+    width: 80vw;
+    margin-top: 1vh;
+    font-size: 4vh;
+    font-weight: 400;
+    color:  #cba16a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5vh;
   }
   .services #content {
-    width: 60vw;
+    width: 65vw;
     display: flex;
     flex-direction: column;
     gap: 3vh;
+    box-shadow: 1px 1px 10px 1px gray;
+    background-color: rgba(0, 0, 0, 0.4);
+    color:#cba16a;
   }
 
   #content img {
-    width: 60vw;
+    width: 100%;
+    height: 25vh;
   }
 
   #content h4 {
-    font-size: 2.5vh;
+    font-weight: 500;
+    width: 90%;
+    font-size: 2vh;
+    color:#cba16a;
   }
 
   #content h5{
-    font-size: 2vh;
-    font-weight: 500;
+    width: 100%;
+    padding: 0.1vh;
+    font-size: 1.8vh;
+    font-weight: 300;
+    color:#cba16a;
   }
-  
+
   #content button {
     width: 50%;
     margin-bottom: 2vh;
+    color: white;
+    box-shadow: 1px 1px 10px 1px white;
   }
+  
 }

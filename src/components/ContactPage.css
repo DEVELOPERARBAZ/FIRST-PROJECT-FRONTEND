@@ -110,107 +110,107 @@ form button{
 }
 @media (max-width:600px) {
     #cp{
+        /* background-color:rgba(0,0,0,0.1); */
         width: 100vw;
+        /* color: #d1a679; */
+        color:white;
+        /* background-color: yellow; */
     }
     #cp h2{
+        /* color: #d1a679; */
+        color: white;
         width: 100vw;
         font-size: 5vw;
-        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        padding-top: 1vh;
     }
     .container{
         width: 100vw;
         display: flex;
+        height: auto;
         flex-direction: column;
         justify-content: center;
         gap:0;
     }
     .container .left{
         width: 100vw;
-        margin-bottom: 3vh;
-    }
-    .container .right{
-        width: 100vw;
-        height: 200vh;
-        /* background-color: red; */
-        display: flex;
-        justify-content: center;
-
-    }
-    .right img{
-        width: 80vw;
     }
     .left #top{
-        font-size: 2vh;
+        /* font-size: 2vh; */
+        font-weight: 700;
         display: flex;
         flex-direction: column;
         width: 100vw;;
-        height: 100vh;
+        height: auto;
     }
     #top span{
         width: 100vw;
+        line-height: 4vh;
         font-size: 2vh;
         font-weight: 600;
+        color:white;
+        text-align: center;
     }
     #top p{
-        font-weight: 400;
+        font-weight: 600;
     }
     #top p a{
         font-weight: 800;
+        color:#d1a679;
+    }
+    #top p h4{
+        color: #d1a679;
+        font-weight: 450;
     }
     #bottom{
-        /* background-color: tan; */
         width: 100vw;
-        height: 200vh;
+        height: auto;
         gap: 1vh;
+        color: white;
     }
     #bottom form{
         width: 100vw;
-        height: 90%;
-        /* background-color: rgb(132, 77, 11); */
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* background-color: red; */
+        padding:1vh;
     }
     form input{
+        width: 90vw;
+        background-color: #d1a779ba;
+        color :white;
+        border:0;
+        border-radius: 0;
+    }
+    input::placeholder{
         color:white;
-        font-size: 1.4vh;
-        width: 60vw;
-        height: 3vh;
-        /* letter-spacing: 0.8vw; */
-        font-weight: 800;
-        text-transform: uppercase;
     }
     label{
-        font-size: 1.5vh;
-        overflow: hidden;
-        font-weight: 700;
+        width: 100vw;
+        color:white;
+        font-family: 'Raleway';
+        padding-left: 15vw;
+
     }
     form #description{
+        margin-top: 1vh;
+        padding:1vh;
+        background-color: white;
         color:black;
-        font-size: 3vw;
-        width: 60vw;
+        width: 80vw;
         height: 10vh;
-        font-weight: 800;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 3px;
-        text-transform:capitalize;
     }
     form button{
-        width: 20vw;
-        height: 3vh;
-        font-size: 1.5vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1vh;
-        overflow: hidden;
+        margin-top: 1vh;
+        width: 40vw;
+        background-color: black;
+        color:white;
+        box-shadow: 1px 1px 10px 1px white;
     }
     input[type="email"]{
-        text-transform:capitalize;
-        resize: none;          
+        width: 90vw;
     }
 }
 
@@ -245,6 +245,11 @@ form button{
     }
   }
 
+  h1,h2,h3,h4,h5,h6{
+    background-color: none;
+    color: #c2ac90;
+}
+
   .success-popup {
     position: fixed;
     bottom: 20px;
@@ -255,6 +260,7 @@ form button{
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     animation: fade-in-out 3s forwards;
+    
   }
   
   @keyframes fade-in-out {
@@ -275,4 +281,9 @@ form button{
       transform: translateY(20px);
     }
   }
+
+  h1,h2,h3,h4,h5,h6{
+    background-color: none;
+    color: #c2ac90;
+}
   

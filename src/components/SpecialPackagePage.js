@@ -6,17 +6,18 @@ import wash from '../images/w8.jpg';
 import c1 from '../images/c1.jpg';
 
 
-
-const openWhatsAppChat = (phoneNumber, message) => {
-    // const url = `https://wa.me/${phoneNumber}?text${message}`;
-    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-    window.open(url,'_blank');
-};
-
 function SpecialPackagePage() {
 
     const phoneNumber = "918422058461";
-    const message = encodeURIComponent('Hello! This is a default message.');
+
+    const packages = ['PU Application Package','Painting Package','Powder Room Package','Falls Ceiling Package','Wood Appliance Package']
+
+    const openWhatsAppChat = (phoneNumber, message) => {
+    
+        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=Hello, Careem Interiors I Want To Know About ${message} More..`;
+        window.open(url,'_blank');
+    };
+
 
     return (
         <div id="special">
@@ -26,31 +27,31 @@ function SpecialPackagePage() {
                 <div className="card">
                     <img src={pu} alt="img1"></img>
                     <h3>PU Application Package</h3>
-                    <button onClick={() => openWhatsAppChat(phoneNumber,message)} target="_blank">Know More..</button>
+                    <button onClick={() => openWhatsAppChat(phoneNumber,packages[0])} target="_blank">Know More..</button>
                 </div>
 
                 <div className="card">
                     <img src={painting} alt="img1"></img>
-                    <h3>Interior Painting Package</h3>
-                    <button onClick={() => openWhatsAppChat(phoneNumber,message)} target="_blank">Know More..</button>
+                    <h3>Painting Package</h3>
+                    <button onClick={() => openWhatsAppChat(phoneNumber,packages[1])} target="_blank">Know More..</button>
                 </div>
 
                 <div className="card">
                     <img src={wash} alt="img1"></img>
-                    <h3>Interior Bathroom Package</h3>
-                    <button onClick={() => openWhatsAppChat(phoneNumber,message)} target="_blank">Know More..</button>
+                    <h3>Powder Room Package</h3>
+                    <button onClick={() => openWhatsAppChat(phoneNumber,packages[2])} target="_blank">Know More..</button>
                 </div>
 
                 <div className="card">
                     <img src={c1} alt="img1"></img>
-                    <h3>Ceiling Falls Package</h3>
-                    <button onClick={() => openWhatsAppChat(phoneNumber,message)} target="_blank">Know More..</button>
+                    <h3>Falls Ceiling Package</h3>
+                    <button onClick={() => openWhatsAppChat(phoneNumber,packages[3])} target="_blank">Know More..</button>
                 </div>
 
                 <div className="card">
                     <img src={carpentry} alt="img1"></img>
-                    <h3>Carpentry Work Package</h3>
-                    <button onClick={() => openWhatsAppChat(phoneNumber,message)} target="_blank">Know More..</button>
+                    <h3>Wood Appliance Package</h3>
+                    <button onClick={() => openWhatsAppChat(phoneNumber,packages[4])} target="_blank">Know More..</button>
                 </div>
             </div>
         </div>

@@ -1,10 +1,22 @@
-import { useEffect } from 'react';
-import './GalleryPage.css';
+import { useEffect } from "react";
+import "./GalleryPage.css";
+import v1 from "../videos/v1.mp4";
+import v2 from "../videos/v2.mp4";
+import v3 from "../videos/v3.mp4";
+import v4 from "../videos/v4.mp4";
+import v5 from "../videos/v5.mp4";
+import v6 from "../videos/v6.mp4";
+import v7 from "../videos/v7.mp4";
+import v8 from "../videos/v8.mp4";
+import v9 from "../videos/v9.mp4";
 function GalleryPage() {
-
   const loadInstagramEmbedScript = () => {
     // Check if the script is already present on the page
-    if (!document.querySelector('script[src="https://www.instagram.com/embed.js"]')) {
+    if (
+      !document.querySelector(
+        'script[src="https://www.instagram.com/embed.js"]'
+      )
+    ) {
       const script = document.createElement("script");
       script.src = "https://www.instagram.com/embed.js";
       script.async = true;
@@ -29,71 +41,29 @@ function GalleryPage() {
     loadInstagramEmbedScript();
   }, []);
 
+  const Videos = [v1, v2, v3, v4, v5, v6, v7, v8, v9];
   return (
-    <section className='insta-reel'>
-      
+    <section className="insta-reel">
+      <h2>These are our recent works</h2>
+      {Videos.map((val, index) => (
+        <div key={index}>
+          <video id={`video-${index}`} className="video-container" controls muted autoPlay>
+            <source src={val} type="video/mp4" />
+          </video>
+        </div>
+      ))}
+
+      {/* 
       <blockquote
         className="instagram-media"
         data-instgrm-captioned
         data-instgrm-permalink="https://www.instagram.com/reel/DDkFe4vyvWv/"
       >
       </blockquote>
-
-
-      <blockquote
-        className="instagram-media"
-        data-instgrm-captioned
-        data-instgrm-permalink="https://www.instagram.com/reel/CvwdwyYoMJ8/"
-      >
-      </blockquote>
-
-      <blockquote
-        className="instagram-media"
-        data-instgrm-captioned
-        data-instgrm-permalink="https://www.instagram.com/reel/Cv60e0FowPC/"
-      >
-      </blockquote>
-
-      <blockquote
-        className="instagram-media"
-        data-instgrm-captioned
-        data-instgrm-permalink="https://www.instagram.com/reel/CwSxxKNI_c3/"
-      >
-      </blockquote>
-
-      <blockquote
-        className="instagram-media"
-        data-instgrm-captioned
-        data-instgrm-permalink="https://www.instagram.com/reel/Crvtbjgo_bC/"
-      >
-      </blockquote>
-
-      <blockquote
-        className="instagram-media"
-        data-instgrm-captioned
-        data-instgrm-permalink="https://www.instagram.com/reel/CuW9MBIotn3/"
-      >
-      </blockquote>
-
-      <blockquote
-        className="instagram-media"
-        data-instgrm-captioned
-        data-instgrm-permalink="https://www.instagram.com/reel/CrjEh31IxRV/"
-      >
-      </blockquote>
-
-      <blockquote
-        className="instagram-media"
-        data-instgrm-captioned
-        data-instgrm-permalink="https://www.instagram.com/reel/CtRP2OqICWY/"
-      >
-      </blockquote>
-      <script async src="//www.instagram.com/embed.js"></script>
+      <script async src="//www.instagram.com/embed.js"></script>  */}
     </section>
   );
 }
 
 export default GalleryPage;
 // export default InstagramEmbed;
-
-

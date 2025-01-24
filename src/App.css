@@ -1,14 +1,9 @@
 
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --background-color: #f8f9fa;
+  --headings: #c2ac90;
   --text-color: #212529;
-  --font-family: 'Arial', sans-serif;
-  --spacing: 1rem;
 }
 
-/* Keyframe animation */
 @keyframes slideInFromLeft {
   0% {
     left: -100vw; /* Start from completely offscreen */
@@ -31,26 +26,30 @@
   }
 }
 
-*{
-  /* font-family:Helvetica, sans-serif; */
-  overflow-x: hidden;
+html, body ,*{
+  overflow-x: hidden; /* Keep this if you want to hide horizontal scrollbars */
+  overflow-y: auto;   /* Ensure vertical scrolling is enabled */
 }
 
 h2,h3,h4{
-  color:#cba16a;
   text-align: center;
 }
 
-li{
-  color:rgba(0, 0, 0, 0.7);
-}
 
 button:hover{
   cursor: pointer;
 }
+*{
+  font-family: 'Raleway',Arial, Helvetica, sans-serif;
+}
+
+ .App{
+  background-color: rgba(0, 0, 0, 0.9);
+  /* background: linear-gradient(to bottom , rgba(0, 0, 0, 1) ,rgba(0, 0, 0, 0.9) ); */
+}
 
 .App hr{
-  color: gray;
+  color: white;
   width: 90vw;
   margin-left: 5vw;
   margin-bottom: 2vh;
@@ -61,7 +60,6 @@ button:hover{
 color:black;
 background-color: #b59140 ;
 }
-
 .loading-screen{
   height: 100vh;
   width: 100vw;;
@@ -82,21 +80,19 @@ background-color: #b59140 ;
   position: relative;
   left: -100vw;  /* Move the div completely outside the window */
   opacity: 0;  /* Initially hidden */
-  animation: slideInFromLeft 3s forwards; /* Animation applied */
+  animation: slideInFromLeft 3s forwards; 
 }
 
-
-@media (max-width:400px) {
+@media (max-width:600px) {
     .App hr{
-      color: #b59140;
+      color:whtie;
       width: 90vw;
       margin-left: 5vw;
       margin-bottom: 1vh;
   }
-
   .loading-screen{
-    height: 100vh;
-    width: 100vw;;
+    width: 100vw;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +100,7 @@ background-color: #b59140 ;
   }
   .loading-screen img{
     width: 70vw;
-    height: 20vh;
+    height: 10vh;
     opacity: 0;
     animation: blink 3s;
   }

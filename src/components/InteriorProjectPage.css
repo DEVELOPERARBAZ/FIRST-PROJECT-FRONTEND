@@ -159,7 +159,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #f44336;
+    background-color: black;
     color: white;
     border: none;
     padding: 10px;
@@ -172,6 +172,12 @@ body {
 .close-btn:hover {
     background-color: #d32f2f;
 }
+
+h1,h2,h3,h4,h5,h6{
+    background-color: none;
+    color: #c2ac90;
+}
+
 /* Responsive Design */
 /* Responsive Design for max-width 600px */
 @media (max-width: 600px) {
@@ -200,6 +206,10 @@ body {
     .section .section-title{
         width: 100vw;
         font-size: 4vh;
+        color: #cba16a ;
+    }
+    .section-title span{
+        background-color: black;
     }
     .section h2{
         font-size: 3vh;

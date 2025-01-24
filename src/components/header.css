@@ -7,18 +7,13 @@ html,body{
     width: 100%;
 }
 #header-section{
-    background:linear-gradient(to right,#c2ac90,rgb(0, 0, 0),#c2ac90);
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9));
     width: 100vw;
     height: 15vh;
     background-color: transparent;
     display: flex;
     justify-content: center;
 }
-
-#menuIcon{
-    display: none;
-}
-
 #mainLogo{
     margin-top: 1%;
     width: 50vw;
@@ -26,18 +21,42 @@ html,body{
     /* border-radius: 50%; */
     /* box-shadow: 2px 1px 3px 3px black; */
 }
+#icon-btn{
+    display: none;
+}
   
+h1,h2,h3,h4,h5,h6{
+    background-color: none;
+    color: #c2ac90;
+}
+
 @media (max-width:600px){
     #header-section{
-        background:linear-gradient(to left  ,black,#c2ac90);
+        background:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,1));
         width: 100vw;
         height: 20vh;
         display: flex;
-        gap:2vw;
+        justify-content: space-evenly;
+        align-items: center;
     }
     #mainLogo{
-        width: 90vw;
-        height: 15vh;
-        /* margin-top: 2vh; */
+        width: 50vw;
+        height: 7vh;
+        margin-top: 2vh;
+        transform: translate(10vw,-1vh);
+    }
+    #icon-btn{
+        background-color: transparent;
+        border:0;
+        display: flex;
+        transform: translateX(9vw) scale(0.85);
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px 1px #d1a679;
+        
+    }
+
+    #menu-img{
+        opacity: 0.85;
+        background:linear-gradient(to right ,#d1a679,#d1a679);
     }
 }

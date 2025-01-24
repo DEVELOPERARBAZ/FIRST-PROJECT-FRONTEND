@@ -53,10 +53,15 @@
 .card button:hover{
     cursor: pointer;
 }
+h1,h2,h3,h4,h5,h6{
+    background-color: none;
+    color: #c2ac90;
+}
+
 @media (max-width:600px) {
     #special h1{
         font-size: 3vh;
-        color: #323232;
+        color: #cba16a;
         margin-top: 3vh;;
     }
     #special-content{
@@ -66,25 +71,28 @@
         align-items: center;
     }
     #special-content .card{
+        background-color: #cba16a;
+        margin-top: 1vh;
         width: 80vw;
         display: flex;
         gap:3vh;
+        padding:0.5vh;
+        box-shadow: 1px 1px 10px 3px white;
     }
     .card h3{
+        color : black;
         font-size: 2vh;
+        font-weight: 600;
     }
     .card img{
         width: 80vw;
+        border: 1px solid black;
     }
     .card button{
-        width: 40vw;
-        height: 8vh;
+        width: 50%;
         margin-bottom: 2vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-transform: capitalize;
+        color: white;
+        box-shadow: 1px 1px 10px 1px black;
+        font-weight: 300;
     }
-    
-
 }

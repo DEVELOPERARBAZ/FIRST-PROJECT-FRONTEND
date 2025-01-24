@@ -3,6 +3,7 @@
     height: 80vh;
     display: flex;
 }
+
 .slider-container .slider img{
     width: 100vw;
     max-height: 100%;
@@ -29,30 +30,37 @@
 @media (max-width:600px) {
     
     .slider-container{
+        margin-top: 0.5vh;
         width: 140vw;
-        height: 40vh;
+        height: auto;
         scrollbar-width: 0;
     }
     .slider-container .slider img{
         width:100vw;
-        height: 40vh;
+        height: 45vh;
     }
     
     .slider-container button{
         width: 20vw;
-        height: 10vh;
-        border-radius: 50%;
+        height: 10%;
         border:0;
-        background-color: rgba(0, 0, 0, 0.3);
-        font-size: 5vh;
-        color:white;
+        background-color: transparent;
+        color: black;
+        /* #cba16a */
+        background-color: rgba(255, 255, 255,0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+    .slider-container button:hover{
+        cursor: pointer;
+    }
     .slider-button-prev{
-        transform: translate(20vw,15vh);
+        transform: translate(20vw,18vh);
     }
     
     .slider-button-next{
-        transform: translate(-20vw,15vh);
+        transform: translate(-20vw,18vh);
     }
+
 }

@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
+import './App.css';
 
 import Header from './components/header';
 import Nav from './components/nav';
@@ -11,11 +13,14 @@ import InteriorProjectTour from './components/InteriorProjectTour';
 import ContactPage from './components/ContactPage';
 import Footer from './components/footer';
 import Er from './components/ErrorPage';
+// import ScrollToTop from './components/ScrollToTop';
+
+
 import logo from './images/EditedMainLogo.png';
-import './App.css';
 
 function App() {
   const [showApp, setShowApp] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // Move outside conditional return
 
   useEffect(() => {
     // Set a delay of 3 seconds before rendering the app
@@ -27,21 +32,34 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const toggleNavbar = () => {
+    console.log(isOpen);
+    setIsOpen(!isOpen); // Toggle the state to show/hide the navbar
+  };
+
   if (!showApp) {
     // Display a loading placeholder during the delay
     return (
       <div className="loading-screen">
-        <img src={logo} alt="companyLogo"></img>
+        <img src={logo} alt="companyLogo" />
       </div>
     );
   }
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Enables smooth scrolling
+    });
+  };
+
   return (
     <div className="App">
-      <Header />
+      <Header toggleNavbar={toggleNavbar} />
       <Router>
-        <Nav />
+        <Nav isOpen={isOpen} toggleNavbar={toggleNavbar} />
         <hr />
+        {/* <ScrollToTop /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -52,7 +70,7 @@ function App() {
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="*" element={<Er />} />
         </Routes>
-      </Router>
+        </Router>
       <Footer />
     </div>
   );
