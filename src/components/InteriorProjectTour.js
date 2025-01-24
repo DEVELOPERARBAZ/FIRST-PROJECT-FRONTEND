@@ -43,7 +43,7 @@ export default function InteriorProjectTour() {
         { title: 'Living Room', images: [h1, h2, h3, h4] },
         { title: 'Bedroom', images: [b1, b2, b3, b4] },
         { title: 'Modular kitchen', images: [k1, k2, k3, k4, k5] },
-        { title: 'Designing Falls Ceiling', images: [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11] },
+        { title: 'Designing False Ceiling', images: [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11] },
         { title: 'Powder Room', images: [w1, w2, w3, w4, w5, w6, w7, w8] },
     ];
 
