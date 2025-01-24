@@ -34,7 +34,7 @@ export default function HomePage() {
             <li>Living Room</li>
             <li>Bedroom</li>
             <li>Modular kitchen</li>
-            <li>Designing Falls Ceiling</li>
+            <li>Designing False Ceiling</li>
             <li>Powder Room</li>
             <button id="learn" onClick={toAbout}>
               Know More..
