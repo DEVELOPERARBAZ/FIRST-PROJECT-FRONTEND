@@ -1,4 +1,3 @@
-import sundar from "../images/sundar.jpg";
 import h2 from "../images/h2.jpg";
 
 import React from "react";

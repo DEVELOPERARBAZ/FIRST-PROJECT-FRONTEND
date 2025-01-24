@@ -1,5 +1,4 @@
 // import backGroundVideo from "../videos/backGroundVideo.mp4";
-import lady from "../images/lady.jpg";
 import services from "../images/b4.jpg";
 import "./HomePage.css";
 import { useNavigate } from "react-router-dom";
